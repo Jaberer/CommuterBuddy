@@ -1,0 +1,116 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="_7.AboutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="Commuter Buddy" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="about" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Margin="12,143,12,18" Grid.RowSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="441*"/>
+                <RowDefinition Height="166*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Name="Information"
+                TextWrapping="Wrap" 
+                Text="information" 
+                Margin="0,0,0,406.328"
+                FontFamily="Segoe WP SemiLight"
+                FontSize="28" 
+                Foreground="#FF959595"/>
+            <TextBlock Name="NameName"
+                TextWrapping="Wrap" 
+            	Text="Commuter Buddy" 
+            	Margin="0,38,0,368.328"
+            	FontFamily="Segoe WP SemiLight"
+            	FontSize="18" 
+            	Foreground="#FF959595"/>
+            <TextBlock Name="Version"
+                TextWrapping="Wrap" 
+            	Text="Version: 1.0.0.0" 
+            	Margin="0,63,0,343.328"
+            	FontFamily="Segoe WP SemiLight"
+            	FontSize="18" 
+            	Foreground="#FF959595"/>
+            <TextBlock Name="Author"
+                TextWrapping="Wrap" 
+            	Text="Author: Util Apps" 
+            	Margin="0,87,0,319.328"
+            	FontFamily="Segoe WP SemiLight"
+            	FontSize="18" 
+            	Foreground="#FF959595"/>
+            <TextBlock Name="Date"
+                TextWrapping="Wrap" 
+            	Text="Latest Release: August 9, 2014" 
+            	Margin="0,114,0,292.328"
+            	FontFamily="Segoe WP SemiLight"
+            	FontSize="18" 
+            	Foreground="#FF959595"/>
+            <TextBlock Name="Note"
+                TextWrapping="Wrap" 
+            	Text="author's note" 
+            	Margin="0,177,0,229.328"
+            	FontFamily="Segoe WP SemiLight"
+            	FontSize="28" 
+            	Foreground="#FF959595"/>
+            <TextBlock Name="NoteText"
+                TextWrapping="Wrap" 
+            	Margin="-1,211,1,49.328"
+            	FontFamily="Segoe WP SemiLight"
+            	FontSize="18" 
+            	Foreground="#FF959595">
+            	<Run Text="Thanks for downloading Commuter Buddy, the quick and easy-to-use distance based alarm clock - you will never miss a stop ever again!"/>
+            	<LineBreak/>
+            	<LineBreak/>
+            	<Run Text="If you like the app, give us a review!"/>
+            	<LineBreak/>
+            	<LineBreak/>
+            	<Run Text="See something wrong? Contact us!"/>
+            </TextBlock>
+            <TextBlock Name="Contact"
+                TextWrapping="Wrap" 
+            	Text="contact" 
+            	Margin="0,405,0,1"
+            	FontFamily="Segoe WP SemiLight"
+            	FontSize="28" 
+            	Foreground="#FF959595"/>
+            <TextBlock Name="ContactInfo"
+                TextWrapping="Wrap" 
+            	Margin="-1,439,1,-13"
+            	FontFamily="Segoe WP SemiLight"
+            	FontSize="18" 
+            	Foreground="#FF959595" Grid.RowSpan="2">
+            	<Run Text="For more information, contact us! We want your feedback!"/>
+            	<LineBreak/>
+            	<LineBreak/>
+            	<Run Text="Website: Coming soon!"/>
+            	<LineBreak/>
+            	<LineBreak/>
+            	<Run Text="Email: Coming soon!"/>
+            </TextBlock>
+        </Grid>
+    </Grid>
+
+
+</phone:PhoneApplicationPage>
